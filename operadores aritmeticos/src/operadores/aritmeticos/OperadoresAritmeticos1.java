@@ -1,12 +1,12 @@
 /*
-Autor Jose Elkin Vargas Alarcon
+Autor Jorge polanco ramirez
  */
 package operadores.aritmeticos;
 
 import java.util.Scanner;
 
 
-public class OperadoresAritmeticos {
+public class OperadoresAritmeticos1 {
 
   
     public static void main(String[] args) {

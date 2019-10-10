@@ -1,5 +1,5 @@
 /*Trabajando con variables
-autor Jose Elkin Vargas Alarcon 
+autor Jorge polanco ramirez
  */
 package variables;
 
@@ -7,7 +7,7 @@ package variables;
  *
  * @author FORMACIÓN
  */
-public class Variables {
+public class variables1 {
 
     /**
      * @param args the command line arguments
@@ -24,13 +24,13 @@ public class Variables {
      boolean NoActivo;
      
      /*Incializando las variables
-     MiNombre = "Elkin"
-     ResultadosPruebas = 250;
-     Estatura = 1.70;
+     MiNombre = "Jorge"
+     ResultadosPruebas = 207;
+     Estatura = 1.78;
      Activo = true;
-     MiApellido = "Vargas";
-     idficha = 1082853;
-     PuntajeSisben = 7.33;
+     MiApellido = "polanco";
+     idficha = 1007566893;
+     PuntajeSisben = 43.5;
      NoActivo = false;
      
      System.out.println("Nombres completos: " + MiNombre + MiApellido);

@@ -1,11 +1,11 @@
 /*
-Autor Jose elkin Vargas
+Autor Jorge polanco ramirez
  */
 package iterativas;
 
 import java.util.Scanner;
 
-public class Do_While {
+public class Do_while1{
 
  public static void main(String[] args) {
      
