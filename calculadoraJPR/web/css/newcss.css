@@ -1,0 +1,30 @@
+body {
+    font:15px Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #FFDFDF;
+}
+.boton1 {
+    height: 38px;
+    background: #FF5050;
+    border: 6;
+    padding-left: 55px;
+    padding-right: 55px;
+    color: #fff;
+}
+.input{
+    width: 100%;
+    height: 35px;
+    border: 1px solid gray;
+    margin-bottom: 5px;
+    
+   
+    
+}
+#pantalla {
+    padding-right: 350px;
+}
+#table {
+    background-color: #157E08;
+    padding: 50px;
+}

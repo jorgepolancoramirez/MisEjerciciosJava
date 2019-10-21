@@ -1,11 +1,15 @@
-// jorge polanco ramirez
-package clases;
+// Autor: Andres Polanco
+package Clases;
 
-public class triangulo {
-    public float base;
-    public float altura;
-    public float calcular;
-    public void calcular_areatriangulo(){
-        this.calcular=this.base*this.altura/2;
-    }
+
+public class Triangulo {
+    public float AreaTriangulo;
+    public float Base;
+    public float Altura;
+
+    public void Calcular(){
+        this.AreaTriangulo = this.Base * this.Altura/2;
+    
 }
+}
+

@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
     <servlet>
-        <servlet-name>con_ejercicio2</servlet-name>
-        <servlet-class>controlador.con_ejercicio2</servlet-class>
+        <servlet-name>cont_Ejercicio2</servlet-name>
+        <servlet-class>Controlador.cont_Ejercicio2</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Cont_Ejercicio2</servlet-name>
+        <servlet-class>Controlador.Cont_Ejercicio2</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>con_ejercicio2</servlet-name>
-        <url-pattern>/con_ejercicio2</url-pattern>
+        <servlet-name>cont_Ejercicio2</servlet-name>
+        <url-pattern>/cont_Ejercicio2</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Cont_Ejercicio2</servlet-name>
+        <url-pattern>/Cont_Ejercicio2</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
