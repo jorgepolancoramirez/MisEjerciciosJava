@@ -50,7 +50,7 @@ ArrayList<Estudiante> Listar_Estudiante = new ArrayList<Estudiante>();;
                  Est.setNota1(Float.parseFloat(request.getParameter("N1")));
                  Est.setNota2(Float.parseFloat(request.getParameter("N2")));
                  Est.setNota3(Float.parseFloat(request.getParameter("N3")));
-                 Est.setDefinitiva(Est.getNota1()+Est.getNota2()+Est.getNota3()/3);
+                 Est.setDefinitiva((Est.getNota1()+Est.getNota2()+Est.getNota3())/3);
                  Listar_Estudiante.add(Est);
                  out.println("<center><h3> se registro el estudiante:  " +Est.getNombre()+"</h3></center>");
                  
