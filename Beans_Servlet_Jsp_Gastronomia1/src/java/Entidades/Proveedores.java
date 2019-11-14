@@ -7,17 +7,17 @@ package Entidades;
 
 
 public class Proveedores {
-        private String Nombre;
+        private String nombre;
     private String cedula;
     private String  telefono;
     private String  ciudad;
 
     public String getNombre() {
-        return Nombre;
+        return nombre;
     }
 
-    public void setNombre(String Nombre) {
-        this.Nombre = Nombre;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     public String getCedula() {
