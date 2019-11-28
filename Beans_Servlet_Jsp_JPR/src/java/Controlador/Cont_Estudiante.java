@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import Entidades.Estudiante;
+import com.google.gson.Gson;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
@@ -39,10 +40,37 @@ ArrayList<Estudiante> Listar_Estudiante = new ArrayList<Estudiante>();;
                      out.println("<td>"+Listar_Estudiante.get(i).getNota1()+"</td>");
                      out.println("<td>"+Listar_Estudiante.get(i).getNota2()+"</td>");
                      out.println("<td>"+Listar_Estudiante.get(i).getNota3()+"</td>");
-                     out.println("<td>"+Listar_Estudiante.get(i).getDefinitiva()+"</td></tr>");
+                     out.println("<td>"+Listar_Estudiante.get(i).getDefinitiva()+"</td>");
+                     out.println("<td><a href='javascript:Eliminar_Estudiante("+i+");'>Eliminar</a></td></tr>");
 
                      }
                  }
+           
+           
+           
+           if (request.getParameter("Operacion").equals("Eliminar"))
+                 {
+                     
+                           int id = Integer.parseInt(request.getParameter("id"));
+                           Listar_Estudiante.remove(id);
+                           out.println("<h2><p style='color:white;'>Estudiante Eliminado</p></h2>");
+                     
+                 }
+                 
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
              if (request.getParameter("Operacion").equals("Registrar"))
              {
                  Est  = new Estudiante();
@@ -52,11 +80,17 @@ ArrayList<Estudiante> Listar_Estudiante = new ArrayList<Estudiante>();;
                  Est.setNota3(Float.parseFloat(request.getParameter("N3")));
                  Est.setDefinitiva((Est.getNota1()+Est.getNota2()+Est.getNota3())/3);
                  Listar_Estudiante.add(Est);
-                 out.println("<center><h3> se registro el estudiante:  " +Est.getNombre()+"</h3></center>");
+                 out.println("<center> <h2> <p style='color:white;'>Se registro el estudiante: " + Est.getNombre()+"</p></h2></center>");
                  
                  
-               
-        }
+                 
+                }
+              if (request.getParameter("Operacion").equals("Listar_Json"))
+             
+              {
+                 String json = new Gson().toJson(Listar_Estudiante);
+                 out.println(json);
+             }
     }
 }
 

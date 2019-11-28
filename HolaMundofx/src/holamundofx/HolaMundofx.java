@@ -24,7 +24,7 @@ public class HolaMundofx extends Application {
     @Override
     public void start(Stage primaryStage) {
         
-        Label lblMensaje = new Label("Hola Mundo");
+        Label lblMensaje = new Label("Hola Jorge");
         StackPane root = new StackPane();
         root.getChildren().add(lblMensaje);
         

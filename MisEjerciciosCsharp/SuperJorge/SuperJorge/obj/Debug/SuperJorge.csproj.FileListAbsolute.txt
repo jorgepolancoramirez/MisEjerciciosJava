@@ -1,0 +1,10 @@
+C:\Users\ADSI-1802853\Documents\NetBeansProjects\MisEjerciciosCsharp\SuperJorge\SuperJorge\obj\Debug\SuperJorge.csprojResolveAssemblyReference.cache
+C:\Users\ADSI-1802853\Documents\NetBeansProjects\MisEjerciciosCsharp\SuperJorge\SuperJorge\obj\Debug\MiPrimerFormulario.Form1.resources
+C:\Users\ADSI-1802853\Documents\NetBeansProjects\MisEjerciciosCsharp\SuperJorge\SuperJorge\obj\Debug\MiPrimerFormulario.Properties.Resources.resources
+C:\Users\ADSI-1802853\Documents\NetBeansProjects\MisEjerciciosCsharp\SuperJorge\SuperJorge\obj\Debug\SuperJorge.csproj.GenerateResource.Cache
+C:\Users\ADSI-1802853\Documents\NetBeansProjects\MisEjerciciosCsharp\SuperJorge\SuperJorge\bin\Debug\MiPrimerFormulario.exe.config
+C:\Users\ADSI-1802853\Documents\NetBeansProjects\MisEjerciciosCsharp\SuperJorge\SuperJorge\bin\Debug\MiPrimerFormulario.exe
+C:\Users\ADSI-1802853\Documents\NetBeansProjects\MisEjerciciosCsharp\SuperJorge\SuperJorge\bin\Debug\MiPrimerFormulario.pdb
+C:\Users\ADSI-1802853\Documents\NetBeansProjects\MisEjerciciosCsharp\SuperJorge\SuperJorge\bin\Debug\Mysql.data.dll
+C:\Users\ADSI-1802853\Documents\NetBeansProjects\MisEjerciciosCsharp\SuperJorge\SuperJorge\obj\Debug\MiPrimerFormulario.exe
+C:\Users\ADSI-1802853\Documents\NetBeansProjects\MisEjerciciosCsharp\SuperJorge\SuperJorge\obj\Debug\MiPrimerFormulario.pdb

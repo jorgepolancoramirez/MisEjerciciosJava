@@ -2,15 +2,15 @@ body{
     font: 15px Arial, Helvetica, sans-serif;
     padding: 0;
     margin: 0;
-    background-color: #f4f4f4;
+    background-color: white;
      }
-    .boton1{
+    .boton2{
         height: 38px;
-        background: #fc7323;
+        background: lime;
         border: 0;
         padding-left: 20px;
         padding-right: 20px;
-        color: #fff;
+        color: black;
      }
         input{
             width: 100%;
@@ -18,3 +18,5 @@ body{
             border: 1px solid gray;
             margin-bottom: 5px;
        }
+       
+ 

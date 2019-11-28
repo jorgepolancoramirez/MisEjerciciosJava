@@ -2,15 +2,16 @@ body{
     font: 15px Arial, Helvetica, sans-serif;
     padding: 0;
     margin: 0;
-    background-color: #b7deed;
+    margin-top:1px;
+
      }
-    .boton1{
-        height: 38px;
-        background: #e9d4b3;
+    #boton3{
+        height: 50px;
+        background: black;
         border: 0;
         padding-left: 20px;
         padding-right: 20px;
-        color: #f18e99;
+        
      }
         input{
             width: 100%;
@@ -18,3 +19,10 @@ body{
             border: 1px solid gray;
             margin-bottom: 5px;
        }
+       #jj{
+           color: white;
+       }
+       .txt1{
+           background-color: white;
+       }
+       

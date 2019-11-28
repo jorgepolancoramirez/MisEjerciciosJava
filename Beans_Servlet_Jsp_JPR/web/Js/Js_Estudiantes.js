@@ -39,13 +39,71 @@ function Listar_Estudiantes (){
             data:parametros,
             dataType:"text",
             success: function (resp){
-                $('#Lista_Estuadiante').html(resp);
+                $('#Listar_Estudiantes').html(resp);
                    
             }
         }).fail(function (jqXHR, textStatus, errorThrown){
             alert("Error  : " + jqXHR.Status);
-    })    
+    }) ;   
                 
                 }
+                
+ function Listar_Estudiantes_json (){
+    
+     var parametros = { 'Operacion' : 'Listar_Json'};
+    $.ajax({
+            type:"POST",
+            url:"Cont_Estudiante",
+            data:parametros,
+            dataType:"json",
+            success: function (resp){
+            var tbody="";
+            var i=0;
+            
+            $.each(resp, function (index, val){
+                tbody +="<tr><td>"+i+"</td>";
+                tbody +="<td>"+val.Nombre+"</td>";
+                tbody +="<td>"+val.nota1+"</td>";
+                tbody +="<td>"+val.nota2+"</td>";
+                tbody +="<td>"+val.nota3+"</td>";
+                tbody +="<td>"+val.definitiva+"</td>";
+                tbody +="<td><a href='javascript:Eliminar_Estudiante("+i+");'> Eliminar</a></td></tr>";
+                
+                i++;
+            });
+            
+            alert ("Respuesta de Backend con json");
+                $('#Lista_proveedores').html(tbody);
+                   
+            }
+        }).fail(function (jqXHR, textStatus, errorThrown){
+            alert("Error  : " + jqXHR.Status);
+    }) ;   
+                
+                }
+                
+                               
+                
+                
+                
+ function Eliminar_Estudiante (id){
+     
+    var parametros = { 'Operacion' : 'Eliminar','id':id};
+    $.ajax({
+            type:"POST",
+            url:"Cont_Estudiante",                                                
+            data:parametros,
+            dataType:"text",
+            success: function (resp){
+                $('#respuesta_servidor').html(resp);
+                Listar_Estudiantes();
+                   
+            }
+        }).fail(function (jqXHR, textStatus, errorThrown){
+            alert("Error  : " + jqXHR.Status);
+    });    
+                
+                }
+
 
 

@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import Entidades.Proveedores;
+import com.google.gson.Gson;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
@@ -20,7 +21,7 @@ import java.util.List;
 import java.util.ListIterator;
 public class Cont_Proveedores extends HttpServlet {
 
- Proveedores Est;
+ Proveedores op;
 
 ArrayList<Proveedores> Listar_Proveedores = new ArrayList<Proveedores>();;
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
@@ -38,22 +39,41 @@ ArrayList<Proveedores> Listar_Proveedores = new ArrayList<Proveedores>();;
                      out.println("<td>"+Listar_Proveedores.get(i).getCedula()+"</td>");
                      out.println("<td>"+Listar_Proveedores.get(i).getTelefono()+"</td>");
                      out.println("<td>"+Listar_Proveedores.get(i).getCiudad()+"</td>");
+                     out.println("<td><a href='javascript:Eliminar_Proveedores("+i+");'>Eliminar</a></td></tr>");
+                    
 
                      }
                  }
+           
+           if (request.getParameter("Operacion").equals("Eliminar"))
+                 {
+                     
+                           int id = Integer.parseInt(request.getParameter("id"));
+                           Listar_Proveedores.remove(id);
+                           out.println("<h2><p style='color:white;'>Proveedor Eliminado</p></h2>");
+                     
+                 }
+           
+           
              if (request.getParameter("Operacion").equals("Registrar"))
              {
-                 Est  = new Proveedores();
-                 Est.setNombre(request.getParameter("nomb"));
-                 Est.setCedula(request.getParameter("cc"));
-                 Est.setTelefono(request.getParameter("tel"));
-                 Est.setCiudad(request.getParameter("ciudad"));
+                 op  = new Proveedores();
+                 op.setNombre(request.getParameter("nomb"));
+                 op.setCedula(request.getParameter("cc"));
+                 op.setTelefono(request.getParameter("tel"));
+                 op.setCiudad(request.getParameter("ciudad"));
 
-                 Listar_Proveedores.add(Est);
-                 out.println("<center><h3> se registro el estudiante:  " +Est.getNombre()+"</h3></center>");   
+                 Listar_Proveedores.add(op);
+                 out.println("<center><h2><p style='color:white;'> se registro el Proveedor:  " +op.getNombre()+"</p></h2></center>");   
                  
                
         }
+                if (request.getParameter("Operacion").equals("Listar_Json"))
+             
+              {
+                 String json = new Gson().toJson(Listar_Proveedores);
+                 out.println(json);
+             }
     }
 }
 
