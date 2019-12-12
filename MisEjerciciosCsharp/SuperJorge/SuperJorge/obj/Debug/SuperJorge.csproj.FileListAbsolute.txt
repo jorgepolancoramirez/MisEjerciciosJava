@@ -8,3 +8,5 @@ C:\Users\ADSI-1802853\Documents\NetBeansProjects\MisEjerciciosCsharp\SuperJorge\
 C:\Users\ADSI-1802853\Documents\NetBeansProjects\MisEjerciciosCsharp\SuperJorge\SuperJorge\bin\Debug\Mysql.data.dll
 C:\Users\ADSI-1802853\Documents\NetBeansProjects\MisEjerciciosCsharp\SuperJorge\SuperJorge\obj\Debug\MiPrimerFormulario.exe
 C:\Users\ADSI-1802853\Documents\NetBeansProjects\MisEjerciciosCsharp\SuperJorge\SuperJorge\obj\Debug\MiPrimerFormulario.pdb
+C:\Users\ADSI-1802853\Documents\NetBeansProjects\MisEjerciciosCsharp\SuperJorge\SuperJorge\obj\Debug\MiPrimerFormulario.FormCliente.resources
+C:\Users\ADSI-1802853\Documents\NetBeansProjects\MisEjerciciosCsharp\SuperJorge\SuperJorge\obj\Debug\MiPrimerFormulario.FormLogin.resources
